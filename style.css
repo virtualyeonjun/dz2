@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cinzel:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top, #1a1a1a, #0b0b0b);
+    color: #b75a5a;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.7;
+}
+
+/* Заголовок */
+.header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #0b0b0b, #121212);
+    border-bottom: 2px solid #3b1d1d;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 48px;
+    letter-spacing: 4px;
+    color: #811a15; 
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #770f0f;
+    letter-spacing: 1px;
+}
+
+/* Текст  */
+p {
+    max-width: 850px;
+    margin: 30px auto;
+    font-size: 18px;
+    color: #b75a5a;
+    text-align: justify;
+}
+
+
+
+/* Список персонажів */
+ul {
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #2c2c2c;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+
+/* Таблиця */
+table {
+    margin: 60px auto;
+    width: 85%;
+    max-width: 900px;
+    border-collapse: collapse;
+    background-color: #141414;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+th, td {
+    border: 1px solid #3b1d1d;
+    padding: 14px;
+}
+
+th {
+    background-color: #1f1a12;
+    color: #6f170a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    color: #b75a5a;
+}
+
+/* text */
+p::first-letter {
+    font-size: 36px;
+    font-weight: bold;
+    color: #7a2007;
+    float: left;
+    padding-right: 6px;
+}
+
+
+/* Обкладинка книги */
+.book-cover {
+    display: block;
+    margin: 50px auto;
+    max-width: 320px;
+    border-radius: 14px;
+    box-shadow:
+        0 0 40px rgba(0, 0, 0, 0.9),
+        0 0 80px rgba(212, 89, 55, 0.15);
+    transition: transform 0.4s ease;
+}
+
+.book-cover:hover {
+    transform: scale(1.04);
+}
+
+/* ілюстрація */
+.atmosphere {
+    margin: 70px 0;
+    position: relative;
+}
+
+.atmosphere img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    filter: brightness(65%) contrast(110%);
+}
+
+
+.atmosphere::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.8)
+    );
+}
+
+/* список і таблиця */
+.info-block {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 60px auto;
+    max-width: 1000px;
+}
+
+/* Список персонажів */
+.characters {
+    list-style: none;
+    padding: 0;
+    width: 280px;
+}
+
+.characters li {
+    padding: 10px 0;
+    border-bottom: 1px solid #2c2c2c;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+
+/* Таблиця */
+.book-table {
+    width: 600px;
+    border-collapse: collapse;
+    background-color: #141414;
+}
+
+.book-table th,
+.book-table td {
+    border: 1px solid #301212;
+    padding: 14px;
+}
+
+.book-table th {
+    background-color: #1f1212;
+    color: #7c0b0b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+/* Підзаголовки */
+.char h2 {
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Cinzel', serif;
+}
